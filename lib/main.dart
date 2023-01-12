@@ -196,16 +196,19 @@ Widget _buildMiddle() {
 // 하단
 Widget _buildBottom(BuildContext context) {
   final items = List.generate(1, (i) {
-    return ListTile(
-      leading:Icon(Icons.notifications_none),
-      title:Text('득근득근 어플 사용법 및 공지사항',),
-      onTap:() async {
-        await Navigator.pushNamed(
-          context,
-            '/fifth'
-        );
-      },
-    );
+    return
+      GestureDetector(
+        onTap:() async {
+          await Navigator.pushNamed(
+              context,
+              '/fifth'
+          );
+        },
+        child: ListTile(
+          leading:Icon(Icons.notifications_none),
+          title:Text('득근득근 어플 사용법 및 공지사항',),
+        ),
+      );
   });
   return ListView(
     physics:NeverScrollableScrollPhysics(), // 이 리스트의 스크롤 동작 금지
@@ -213,6 +216,7 @@ Widget _buildBottom(BuildContext context) {
     children:items,
   );
 }
+
 
 class Page2 extends StatelessWidget {
   @override
