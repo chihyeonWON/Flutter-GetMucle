@@ -145,10 +145,12 @@ Widget _buildTop(BuildContext context){
               child:Column(
                 children: <Widget>[
                   Icon(
-                    Icons.health_and_safety_rounded,
-                    size:40,
+                    Icons.watch_later,
+                    size:100,
                   ),
-                  Text('스톱워치'),
+                  Text('스톱워치',
+                      style:TextStyle(fontSize:20,)
+                  ),
                 ],
               ),
             ),
