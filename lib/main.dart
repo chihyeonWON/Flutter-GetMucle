@@ -5,9 +5,9 @@ import 'stopwatch_page.dart';
 import 'todo_page1.dart';
 
 final dummyItems = [
-  'https://e-ruda.net/uploads/bbspr/2021-12-01_17-29-16_khikJG_00%EC%97%85%EB%A1%9C%EB%93%9C%EC%9A%A9.jpg',
-  'https://thumb.ad.co.kr/article/54/14/34/cf/i/544975-1.jpg',
-  'http://www.sisaweek.com/news/photo/202011/139003_130793_3210.jpg'
+  'https://cdn.pixabay.com/photo/2016/01/08/01/53/gymer-1126999_960_720.jpg',
+  'https://cdn.pixabay.com/photo/2016/12/04/22/15/fitness-1882721_960_720.jpg',
+  'https://cdn.pixabay.com/photo/2021/02/03/11/32/gym-5977600_960_720.jpg'
 ];
 
 void main() async {
