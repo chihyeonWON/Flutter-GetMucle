@@ -71,7 +71,7 @@ Widget Top(BuildContext context) {
         Text('언제든지 문의해주시면 감사하겠습니다.',
             style:TextStyle(color:Colors.black,
               fontSize:20,)),
-        Text('다시 한번 득근득근 앱을 사용해주시는',
+        Text('다시 한번 득근득근 앱을 이용해주시는',
             style:TextStyle(color:Colors.black,
               fontSize:20,)),
         Text('모든 분들께 감사드립니다.',
