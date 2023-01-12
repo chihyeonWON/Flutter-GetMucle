@@ -78,16 +78,16 @@ class _FirstPageState extends State<FirstPage> {
           currentIndex: _index, // 선택된 인덱스
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-              label: '홈',
-              icon: Icon(Icons.home),
+              label:'홈',
+              icon: Icon(Icons.home, size:40,),
             ),
             BottomNavigationBarItem(
               label: '오늘 할 운동',
-              icon: Icon(Icons.assignment),
+              icon: Icon(Icons.assignment, size:40,),
             ),
             BottomNavigationBarItem(
               label: '운동 정보',
-              icon: Icon(Icons.account_circle),
+              icon: Icon(Icons.account_circle, size:40,),
             ),
           ]),
     );
