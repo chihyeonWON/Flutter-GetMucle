@@ -3,6 +3,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'bmi_page.dart';
 import 'stopwatch_page.dart';
 import 'todo_page1.dart';
+import 'notice_page.dart';
 
 final dummyItems = [
   'https://cdn.pixabay.com/photo/2016/01/08/01/53/gymer-1126999_960_720.jpg',
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         '/second':(context)=>BmiMain(),
         '/third':(context)=>StopWatchPage(),
         '/forth':(context)=>ToDoListPage1(),
+        '/fifth':(context)=>NoticePage(),
       },
     );
   }
@@ -101,7 +103,7 @@ class Page1 extends StatelessWidget {
       children: <Widget>[
         _buildTop(context),
         _buildMiddle(),
-        _buildBottom(),
+        _buildBottom(context),
       ],
     );
   }
@@ -192,11 +194,17 @@ Widget _buildMiddle() {
 }
 
 // 하단
-Widget _buildBottom() {
+Widget _buildBottom(BuildContext context) {
   final items = List.generate(1, (i) {
     return ListTile(
       leading:Icon(Icons.notifications_none),
-      title:Text('득근득근 어플 사용법 및 공지사항'),
+      title:Text('득근득근 어플 사용법 및 공지사항',),
+      onTap:() async {
+        await Navigator.pushNamed(
+          context,
+            '/second'
+        );
+      },
     );
   });
   return ListView(
