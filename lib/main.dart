@@ -126,10 +126,12 @@ Widget _buildTop(BuildContext context){
               child:Column(
               children: <Widget>[
                 Icon(
-                  Icons.health_and_safety_rounded,
-                  size:40,
+                  Icons.calculate_sharp,
+                  size:100,
                 ),
-                Text('Bmi 계산하기'),
+                Text('Bmi 계산하기',
+                  style:TextStyle(fontSize:20,)
+                ),
               ],
             ),
             ),
