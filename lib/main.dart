@@ -228,9 +228,24 @@ class Page2 extends StatelessWidget {
 class Page3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading:Icon(Icons.notifications_none),
-      title:Text('사이드 레터럴 레이즈'),
+    return ListView(
+      children: <Widget>[
+        GestureDetector(
+          onTap:() async {
+            await Navigator.pushNamed(
+                context,
+                '/fifth'
+            );
+          },
+          child: ListTile(
+          leading: SizedBox(
+             height: 100.0,
+              width: 100.0, // fixed width and height
+              child: Image.asset('assets/chest.jpg'),
+           )
+        ),
+        ),
+      ],
     );
   }
 }
