@@ -56,15 +56,6 @@ class _FirstPageState extends State<FirstPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white, // 배경을 흰색으로
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(
-              Icons.add,
-              color: Colors.black,
-            ),
-            onPressed: () {},
-          ),
-        ],
         title: Text(
           '득근득근',
           style: TextStyle(color: Colors.redAccent, fontWeight: FontWeight.bold), // 글자색을 빨간색으로
