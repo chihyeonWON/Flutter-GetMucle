@@ -230,6 +230,9 @@ class Page3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
+        Container(
+          height:20,
+        ),
         GestureDetector(
           onTap:() async {
             await Navigator.pushNamed(
