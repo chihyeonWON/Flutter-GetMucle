@@ -225,6 +225,14 @@ class Page2 extends StatelessWidget {
     return ToDoListPage1();
   }
 }
+// 브라우저를 열 링크
+const urlStretching = 'https://www.youtube.com/results?search_query=%EC%8A%A4%ED%8A%B8%EB%A0%88%EC%B9%AD  ';
+const urlChest = 'https://www.youtube.com/results?search_query=%EA%B0%80%EC%8A%B4%EC%9A%B4%EB%8F%99';
+const urlShoulder = 'https://www.youtube.com/results?search_query=%EC%96%B4%EA%B9%A8%EC%9A%B4%EB%8F%99';
+const urlBack = 'https://www.youtube.com/results?search_query=%EB%93%B1%EC%9A%B4%EB%8F%99';
+const urlArm = 'https://www.youtube.com/results?search_query=%ED%8C%94%EC%9A%B4%EB%8F%99';
+const urlAbdominal = 'https://www.youtube.com/results?search_query=%EB%B3%B5%EA%B7%BC%EC%9A%B4%EB%8F%99';
+const urlRun = 'https://www.youtube.com/results?search_query=%EC%9C%A0%EC%82%B0%EC%86%8C%EC%9A%B4%EB%8F%99';
 
 class Page3 extends StatelessWidget {
   @override
@@ -368,10 +376,7 @@ class Page3 extends StatelessWidget {
         ),
         GestureDetector(
           onTap:() async {
-            await Navigator.pushNamed(
-                context,
-                '/fifth'
-            );
+            await launch(urlRun, forceWebView: false, forceSafariVC: false);
           },
           child: ListTile(
             title:Text('유산소 운동', style:TextStyle(
