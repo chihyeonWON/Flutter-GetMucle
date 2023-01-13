@@ -244,10 +244,7 @@ class Page3 extends StatelessWidget {
         ),
         GestureDetector(
           onTap:() async {
-            await Navigator.pushNamed(
-                context,
-                '/fifth'
-            );
+            await launch(urlStretching, forceWebView: false, forceSafariVC: false);
           },
           child: ListTile(
             title:Text('준비 운동', style:TextStyle(
@@ -266,10 +263,7 @@ class Page3 extends StatelessWidget {
         ),
         GestureDetector(
           onTap:() async {
-            await Navigator.pushNamed(
-                context,
-                '/fifth'
-            );
+            await launch(urlChest, forceWebView: false, forceSafariVC: false);
           },
           child: ListTile(
             title:Text('가슴 운동', style:TextStyle(
@@ -288,10 +282,7 @@ class Page3 extends StatelessWidget {
         ),
         GestureDetector(
           onTap:() async {
-            await Navigator.pushNamed(
-                context,
-                '/fifth'
-            );
+            await launch(urlShoulder, forceWebView: false, forceSafariVC: false);
           },
           child: ListTile(
             title:Text('어깨 운동', style:TextStyle(
@@ -310,10 +301,7 @@ class Page3 extends StatelessWidget {
         ),
         GestureDetector(
           onTap:() async {
-            await Navigator.pushNamed(
-                context,
-                '/fifth'
-            );
+            await launch(urlBack, forceWebView: false, forceSafariVC: false);
           },
           child: ListTile(
             title:Text('등 운동', style:TextStyle(
@@ -332,10 +320,7 @@ class Page3 extends StatelessWidget {
         ),
         GestureDetector(
           onTap:() async {
-            await Navigator.pushNamed(
-                context,
-                '/fifth'
-            );
+            await launch(urlArm, forceWebView: false, forceSafariVC: false);
           },
           child: ListTile(
             title:Text('팔 운동', style:TextStyle(
@@ -354,10 +339,7 @@ class Page3 extends StatelessWidget {
         ),
         GestureDetector(
           onTap:() async {
-            await Navigator.pushNamed(
-                context,
-                '/fifth'
-            );
+            await launch(urlAbdominal, forceWebView: false, forceSafariVC: false);
           },
           child: ListTile(
             title:Text('복근 운동', style:TextStyle(
