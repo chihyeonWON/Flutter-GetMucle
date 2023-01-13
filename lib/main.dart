@@ -198,7 +198,7 @@ Widget _buildBottom(BuildContext context) {
         },
         child: ListTile(
           leading:Icon(Icons.notifications_none),
-          title:Text('득근득근 어플 사용법 및 공지사항',),
+          title:Text('득근득근 첫 번째 공지사항',),
         ),
       );
   });

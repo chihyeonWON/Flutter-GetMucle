@@ -47,13 +47,19 @@ Widget Top(BuildContext context) {
         Container(
           height:20,
         ),
-        Text('더 많은 사용 경험을 드리고자 간단한 타이머와',
+        Text('더 다양한 사용 경험을 드리고자 간단한 타이머와',
             style:TextStyle(color:Colors.black,
               fontSize:20,)),
-        Text('비만도 계산기와 운동 정보 게시판 기능을',
+        Text('비만도 계산기와 운동 정보 유튜브 링크 기능을',
             style:TextStyle(color:Colors.black,
               fontSize:20,)),
         Text('앱에 추가하였습니다.',
+            style:TextStyle(color:Colors.black,
+              fontSize:20,)),
+        Container(
+          height:20,
+        ),
+        Text('향후에 더 많은 기능을 앱 업데이트로 추가하겠습니다.',
             style:TextStyle(color:Colors.black,
               fontSize:20,)),
         Container(
