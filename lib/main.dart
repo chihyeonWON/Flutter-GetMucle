@@ -241,11 +241,15 @@ class Page3 extends StatelessWidget {
             );
           },
           child: ListTile(
+            title:Text('가슴 운동', style:TextStyle(
+                fontSize: 40,
+                fontWeight: FontWeight.bold)
+            ),
           leading: SizedBox(
              height: 100.0,
               width: 100.0, // fixed width and height
               child: Image.asset('assets/chest.jpg'),
-           )
+           ),
         ),
         ),
       ],
