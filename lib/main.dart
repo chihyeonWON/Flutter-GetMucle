@@ -241,6 +241,28 @@ class Page3 extends StatelessWidget {
             );
           },
           child: ListTile(
+            title:Text('준비 운동', style:TextStyle(
+                fontSize: 40,
+                fontWeight: FontWeight.bold)
+            ),
+            leading: SizedBox(
+              height: 100.0,
+              width: 100.0, // fixed width and height
+              child: Image.asset('assets/stretching.jpg'),
+            ),
+          ),
+        ),
+        Container(
+          height:20,
+        ),
+        GestureDetector(
+          onTap:() async {
+            await Navigator.pushNamed(
+                context,
+                '/fifth'
+            );
+          },
+          child: ListTile(
             title:Text('가슴 운동', style:TextStyle(
                 fontSize: 40,
                 fontWeight: FontWeight.bold)
